@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U4-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script playsong -->
+    <script type="text/javascript">
+        function  PlaySong(){
+            let au = document.getElementById("audio1");
+            au.play();
+        }
+        function  PauseSong(){
+            let au =document.getElementById("audio1");
+            au.pause();
+        }
+    </script>
+</head>
+<body align = "center">
+    <div >
+        <p><h1>การแทรกวีดีโอ</h1></p>
+        <video src="media/541972903030948292.mp4" width="960" height="540" controls="controls" ></video>
+    </div>
+    <br>
+    <div>
+        <p><h1>การแทรกวีดีโอจาก Youtube </h1></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l4dIr_BsXGI?si=k3-08tTo2VQEMmpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div >
+        <p><h1>การแทรก Audio</h1></p>
+        <button onclick="PlaySong();">เล่นเพลง</button>
+        <button onclick="PauseSong();">หยุดเพลง</button>
+        <audio id="audio1" src="media/rose.mp3" controls = "controls"></audio>
+    </div>
+    <br>
+</body>
+</html>
